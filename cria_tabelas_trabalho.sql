@@ -1,18 +1,3 @@
--- Cria o banco se ele não existir
-CREATE DATABASE IF NOT EXISTS bancoii;
-
--- Cria o usuário 'sa' com senha vazia se ele não existir
-CREATE USER IF NOT EXISTS 'sa'@'%' IDENTIFIED BY '';
-
--- Concede todos os privilégios ao usuário 'sa' no banco 'bancoii'
-GRANT ALL PRIVILEGES ON bancoii.* TO 'sa'@'%';
-
--- Aplica as mudanças de privilégios
-FLUSH PRIVILEGES;
-
--- Seleciona o banco de dados para uso
-USE bancoii;
-
 -- Criação das tabelas
 CREATE TABLE IF NOT EXISTS aluno ( -- Tabela para armazenar informações dos alunos
     aluno_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, -- Identificador único do aluno, não nulo e auto-incrementado
@@ -32,4 +17,5 @@ CREATE TABLE IF NOT EXISTS curso ( -- Tabela para armazenar informações dos cu
 -- Criação das constraints (chaves estrangeiras)
 ALTER TABLE aluno ADD CONSTRAINT fk_aluno_curso 
     FOREIGN KEY (fk_curso_id) REFERENCES curso (curso_id) -- Define a chave estrangeira para o curso do aluno
+
     ON DELETE NO ACTION ON UPDATE NO ACTION; -- Define ações para deleção e atualização, sem ação específica
