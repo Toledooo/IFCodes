@@ -1,0 +1,1 @@
+rootProject.name = "br.com.boeira.bancoii.sorm"
