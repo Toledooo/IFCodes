@@ -46,21 +46,6 @@ O banco de dados, denominado `bancoii`, possui a seguinte estrutura definida no 
 
 ## 🚀 Como Executar o Projeto
 
-### 1. Configuração do Banco de Dados
-
-Antes de iniciar a aplicação Java, prepare o ambiente de banco de dados:
-
-1.  Certifique-se de ter o **MySQL** ou **MariaDB** instalado.
-2.  Execute o script de criação (`cria_banco_trabalho.sql`). Este script irá:
-    * Criar o database `bancoii`.
-    * Criar o usuário `sa` com senha vazia e permissões totais.
-    * Criar as tabelas e relacionamentos.
-3.  (Opcional) Execute o script de população (`popula_banco_trabalho.sql`) para inserir dados iniciais.
-
-### 2. Configuração da Aplicação
-
-Após configurar o banco de dados, é necessário garantir que a aplicação Java consiga se conectar a ele.
-
 1.  **Extração:** Descompacte o arquivo do projeto (por exemplo, `br.com.boeira.bancoii.sorm.rar` ou `orm.rar`).
 2.  **Verificação de Credenciais:** Verifique a classe de conexão (geralmente `FabricaConexao.java` na versão nativa ou `application.properties` na versão framework). As credenciais devem corresponder às definidas no script de criação do banco:
     * **URL:** `jdbc:mysql://localhost:3306/bancoii`
