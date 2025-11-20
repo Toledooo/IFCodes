@@ -47,7 +47,4 @@ O banco de dados, denominado `bancoii`, possui a seguinte estrutura definida no 
 ## 🚀 Como Executar o Projeto
 
 1.  **Extração:** Descompacte o arquivo do projeto (por exemplo, `br.com.boeira.bancoii.sorm.rar` ou `orm.rar`).
-2.  **Verificação de Credenciais:** Verifique a classe de conexão (geralmente `FabricaConexao.java` na versão nativa ou `application.properties` na versão framework). As credenciais devem corresponder às definidas no script de criação do banco:
-    * **URL:** `jdbc:mysql://localhost:3306/bancoii`
-    * **Usuário:** `sa` (Conforme criado no script SQL).
-    * **Senha:** (Vazia/Em branco, conforme comando `IDENTIFIED BY ''`).
+2.  **IDE:** Escolha sua IDE de preferência e abra a pasta como projeto.
