@@ -22,7 +22,7 @@ O sistema permite a interação via terminal para gerenciar as entidades acadêm
 
 * **Linguagem:** Java (JDK 17+)
 * **Gerenciamento de Dependências:** Gradle 8.14
-* **Banco de Dados:** MySQL ou MariaDB
+* **Banco de Dados:** H2
 * **Arquitetura:** DAO (Data Access Object) / Console Application
 
 ## 🗄️ Estrutura do Banco de Dados
